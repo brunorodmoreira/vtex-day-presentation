@@ -9,7 +9,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn",
   "eslint.workingDirectories": [
     {

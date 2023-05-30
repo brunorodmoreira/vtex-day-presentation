@@ -40,9 +40,8 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    // `status` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
-    status: method({
-      GET: [validate, status],
+    profile: method({
+      GET: [],
     }),
   },
 })

@@ -6,8 +6,8 @@
   "maxReplicas": 4,
   "workers": 1,
   "routes": {
-    "status": {
-      "path": "/_v/status/:code",
+    "profile": {
+      "path": "/_v/vtex-day-back-demo/profile",
       "public": true
     }
   }

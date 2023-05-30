@@ -2,8 +2,6 @@ import type { ClientsConfig, ServiceContext, RecorderState } from '@vtex/api'
 import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { status } from './middlewares/status'
-import { validate } from './middlewares/validate'
 
 const TIMEOUT_MS = 800
 
@@ -27,10 +25,6 @@ const clients: ClientsConfig<Clients> = {
       retries: 2,
       timeout: TIMEOUT_MS,
     },
-    // This key will be merged with the default options and add this cache to our Status client.
-    status: {
-      memoryCache,
-    },
   },
 }
 
@@ -39,9 +33,7 @@ declare global {
   type Context = ServiceContext<Clients, State>
 
   // The shape of our State object found in `ctx.state`. This is used as state bag to communicate between middlewares.
-  interface State extends RecorderState {
-    code: number
-  }
+  interface State extends RecorderState {}
 }
 
 // Export a service that defines route handlers and client options.

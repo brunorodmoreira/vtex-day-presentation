@@ -1,7 +1,0 @@
-query sku($identifier:  SKUUniqueIdentifier!) {
-  sku(identifier: $identifier) {
-    images{
-      url
-    }
-  }
-}

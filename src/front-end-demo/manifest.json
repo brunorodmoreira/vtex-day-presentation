@@ -8,7 +8,10 @@
     "react": "3.x",
     "messages": "1.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vtex.order-items": "0.x",
+    "vtex.order-manager": "0.x"
+  },
   "registries": [
     "smartcheckout"
   ],

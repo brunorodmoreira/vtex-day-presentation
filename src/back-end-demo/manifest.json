@@ -18,8 +18,8 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "httpstat.us",
-        "path": "*"
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/*"
       }
     },
     {
